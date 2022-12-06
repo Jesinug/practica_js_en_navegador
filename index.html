@@ -10,23 +10,26 @@
 <body>
   <div id="main-container">
     <h1>In&Outs</h1>
-    <div id="sum-container">
+    <br>
+    <h2>Totals</h2>
+    <div id="sum-container">  
+      <div id="total-in"></div>
+      <div id="total-out"></div>
 
     </div>
+    <h2>Historic</h2>
     <div id="historic-container">
-      <h2>Historic</h2>
 
     </div>
+    <h2>New transactions</h2>
     <div id="add-transaction-container">
-      <h2>New transactions</h2>
       <form>
 
         <label>Concept</label>
-        <input placeholder="Add a concept... - i.e.: 'Dinner' or 'Salary'">
-
+        <input id="concept-input" placeholder="Add a concept... - i.e.: 'Dinner' or 'Salary'">
+        <br>
         <label>Amount</label>
-        <p>+ if in | - if out</p>
-        <input placeholder="Add amount... - i.e.: 'Dinner'">
+        <input id="amount-input" placeholder="Add amount... - i.e.: 'Dinner'">
 
         <button id="add-transaction-btn" type="submit">Add transaction</button>
       

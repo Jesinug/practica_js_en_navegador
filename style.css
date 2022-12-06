@@ -20,6 +20,18 @@ body {
   margin: 25px;
   width: auto;
   background-color: rgb(115, 104, 125);
+  font-family: Assistant;
+}
+
+h1,
+h2 {
+  font-family: Cabin;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size:xx-large;
+  margin-top: 30px;
 }
 
 #main-container {
@@ -29,28 +41,95 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 100px 250px;
-  width: 450px;
-  background-color: azure;
+  min-width: 450px;
+  height: auto;
+  border: 6px solid black;
   border-radius: 8px;
-  filter: drop-shadow(10, 4, 4);
 }
 
 #sum-container {
   margin-bottom: 30px;
-  background-color: red;
-  border: 2px dashed blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid gray;
+  border-radius: 6px;
+  padding: 10px;
+  height: 80px;
+  width: 70%;
+}
+
+#total-in {
+  background-color: rgb(102, 163, 102);
+  height: 30px;
+  width: 100px;
+}
+
+#total-out {
+  background-color: rgb(226, 123, 123);
+  height: 30px;
+  width: 100px;
 }
 
 #historic-container {
   margin-bottom: 30px;
+  background-color: #ffffff;
+  border: 0.5px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  height: 80px;
+  width: 70%;
 }
 
 #add-transaction-container {
   margin-bottom: 30px;
+  background-color: #c9d1d9;
+  border-radius: 4px;
+  padding: 10px;
+  width: 70%;
+  font-family: Cabin;
+}
+
+#add-transaction-container > form {
+  font-weight: bolder;
+  margin-bottom: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  padding: 7px;
+  border: 1px;
+  border-radius: 4px;
+  width: 70%;
+}
+
+label,
+button {
+  font-size: large;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: fit-content;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  font-family: Cabin;
 }
 
 footer {
   align-self: center;
+  font-family: Cabin;
+  font-size: larger;
+  color: black;
 }
