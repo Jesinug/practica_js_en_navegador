@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cabin&display=swap');
+:root {
+  --font-color: #c9d1d9;
+  --bg-color: #222630;
+  --primary-color: #c38de1;
+  --secondary-color: #a0ff94;
+  --tertiary-color: #40daf5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px;
+  width: auto;
+  background-color: rgb(115, 104, 125);
+}
+
+#main-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 250px;
+  width: 450px;
+  background-color: azure;
+  border-radius: 8px;
+  filter: drop-shadow(10, 4, 4);
+}
+
+#sum-container {
+  margin-bottom: 30px;
+  background-color: red;
+  border: 2px dashed blue;
+}
+
+#historic-container {
+  margin-bottom: 30px;
+}
+
+#add-transaction-container {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  align-self: center;
+}
