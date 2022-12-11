@@ -16,17 +16,23 @@
     <br />
     
     <h2>Total savings</h2>
-    <div id="total-container"><!--content--></div>
+    <div id="total-container">
+      <span id="total-savings-value"></span>
+    </div>
     
     <div id="inout-main-container">
       <div id="in-container">
         <h3>Total Ins</h3>
-        <div id="total-in"><!--content--></div>
+        <div id="total-in">
+          <span id="total-in-value"></span>
+        </div>
       </div>
       <br>
       <div id="out-container">
         <h3>Total Outs</h3>
-        <div id="total-out"><!--content--></div>
+        <div id="total-out">
+          <span id="total-out-value"></span>
+        </div>
       </div>
     </div>
 
@@ -41,17 +47,16 @@
     <div id="add-transaction-container">
       <h2>Add new transaction</h2>
 
-
+      <section id="form">
         <label>Concept</label>
         <input id="concept-input" type="text" placeholder="Add a concept...">
         <br />
         <label>Amount</label>
-        <h6>+ if 'In' | - if 'Out'</h6>
+        <h6>Add - if 'Out'</h6>
         <input id="amount-input" type="text" placeholder="Add amount...">
         <br />
         <button onClick="addTransactionToHistoric()">Add transaction</button>
-      
-
+      </section>
     </div>
   </div>
 

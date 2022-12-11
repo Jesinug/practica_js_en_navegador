@@ -46,7 +46,7 @@ h3 {
   justify-content: space-between;
   align-items: center;
   margin: 100px 250px;
-  min-width: 450px;
+  min-width: 425px;
   height: auto;
   border: 2px solid white;
   border-radius: 8px;
@@ -64,6 +64,12 @@ h3 {
   padding: 10px;
   height: 80px;
   width: 70%;
+  color:rgb(41, 38, 45);
+  font-size: x-large;
+}
+
+#inout-main-container > span {
+  align-items: center;
 }
 
 #inout-main-container {
@@ -89,19 +95,23 @@ h3 {
   color: #222630;
   font-weight: 800;
   padding: 10px;
+  font-size: large;
 }
 
 #total-in,
 #total-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin-bottom: 12px;
+  border-radius: 6px;
 }
 
 
 
 #total-in {
   border: 1.5px solid rgb(102, 163, 102);
-  border-radius: 4px;
   height: 30px;
   width: 100px;
   padding: 20px 30px;
@@ -109,7 +119,6 @@ h3 {
 
 #total-out {
   border: 1.5px solid rgb(226, 123, 123);
-  border-radius: 4px;
   height: 30px;
   width: 100px;
   padding: 20px 30px;
@@ -124,6 +133,7 @@ h3 {
   height: 80px;
   width: 70%;
   color:rgb(41, 38, 45);
+  border-radius: 6px;
 }
 
 .transactions-list {
@@ -132,16 +142,16 @@ h3 {
 
 #add-transaction-container {
   text-align: center;
-  margin-bottom: 35px;
-  border: 2px solid rgb(34, 112, 196);
-  color: rgb(34, 112, 196);
+  margin-bottom: 45px;
+  border: 2px solid rgb(255, 251, 0);
+  color: rgb(255, 251, 0);
   border-radius: 6px;
   padding: 10px;
   width: 70%;
   font-family: Cabin;
 }
 
-#add-transaction-container > form {
+#add-transaction-container > #form {
   font-weight: bolder;
   color:#222630;
   margin: 10px;
@@ -153,7 +163,7 @@ h3 {
 }
 
 input {
-  padding: 7px;
+  padding: 8px;
   border: 1px;
   border-radius: 4px;
   width: 90%;
@@ -172,14 +182,14 @@ h6 {
 }
 
 button {
-  background-color: rgb(34, 112, 196);
+  background-color: rgb(255, 251, 0);
   margin-top: 20px;
   padding: 10px 20px;
   width: fit-content;
   border-style: none;
   border-radius: 6px;
   font-family: Cabin;
-  color:white;
+  color: #222630;
 }
 
 footer {
