@@ -7,36 +7,55 @@
   <link rel="stylesheet" href="style.css">
   <title>In&Outs</title>
 </head>
-<body>
-  <div id="main-container">
-    <h1>In&Outs</h1>
-    <br>
-    <h2>Totals</h2>
-    <div id="sum-container">  
-      <div id="total-in"></div>
-      <div id="total-out"></div>
 
+<body>
+  
+  <div id="main-container">
+
+    <h1>In&Outs</h1>
+    <br />
+    
+    <h2>Total savings</h2>
+    <div id="total-container"><!--content--></div>
+    
+    <div id="inout-main-container">
+      <div id="in-container">
+        <h3>Total Ins</h3>
+        <div id="total-in"><!--content--></div>
+      </div>
+      <br>
+      <div id="out-container">
+        <h3>Total Outs</h3>
+        <div id="total-out"><!--content--></div>
+      </div>
     </div>
+
     <h2>Historic</h2>
     <div id="historic-container">
+      <ul class="transactions-list">
 
+      </ul>
     </div>
-    <h2>New transactions</h2>
+
+    
     <div id="add-transaction-container">
-      <form>
+      <h2>Add new transaction</h2>
+
 
         <label>Concept</label>
-        <input id="concept-input" placeholder="Add a concept... - i.e.: 'Dinner' or 'Salary'">
-        <br>
+        <input id="concept-input" type="text" placeholder="Add a concept...">
+        <br />
         <label>Amount</label>
-        <input id="amount-input" placeholder="Add amount... - i.e.: 'Dinner'">
-
-        <button id="add-transaction-btn" type="submit">Add transaction</button>
+        <h6>+ if 'In' | - if 'Out'</h6>
+        <input id="amount-input" type="text" placeholder="Add amount...">
+        <br />
+        <button onClick="addTransactionToHistoric()">Add transaction</button>
       
-      </form>
-    </div>
 
+    </div>
   </div>
+
   <footer>Made with TONS of 💛 by Jesinug</footer>
+  <script src="./index.js"></script>
 </body>
 </html>
